@@ -69,11 +69,8 @@ _	_	_	_	_									_	_	_	_	_
 	-t2		(tap-hold-next-release	300	-	(layer-toggle turbo2))
 	:t2		(tap-hold-next-release	300	:	(layer-toggle turbo2))
 
-	;;_up		(tap-hold	300	\_	(layer-switch upcase))
-	;;,up		(tap-hold	300	,	(layer-switch upcase))
-
-	_up		(tap-hold	300	\_	ralt)
-	,up		(tap-hold	300	,	ralt)
+	_up		(tap-hold-next-release	300	\_	ralt)
+	,up		(tap-hold-next-release	300	,	ralt)
 
 	lay0		(layer-switch turbo0)
 
