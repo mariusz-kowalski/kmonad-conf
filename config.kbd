@@ -39,17 +39,18 @@ _	_	_	_	_									_	_	_	_	_
 	;;num	(layer-toggle numbers)	;; Bind num to a button that switches to a layer
 	;;kil	C-A-del				;; Bind kil to a button that Ctrl-Alt-deletes
 	;;ki2	(around-implicit ctl (around alt del))	;; the same as above
-	hrf		(tap-hold-next-release 300 f ctl)
-	hrj		(tap-hold-next-release 300 j ctl)
-	hrd		(tap-hold-next-release 300 d sft)
-	hrk		(tap-hold-next-release 300 k sft)
-	hrs		(tap-hold-next-release 300 s ralt)
-	hel		(tap-hold-next-release 300 l ralt)
-	hra		(tap-hold-next-release 300 a met)
-	hr{		(tap-hold-next-release 300 { met)
-	hr}		(tap-hold-next-release 300 } met)
 	hrdq		(tap-hold-next-release 300 " lalt)
-	hr$		(tap-hold-next-release 300 $ lalt)
+	hra		(tap-hold-next-release 300 a met :timeout-button RA-a)
+	hrs		(tap-hold-next-release 300 s ralt :timeout-button RA-s)
+	hrd		(tap-hold-next-release 300 d sft)
+	hrf		(tap-hold-next-release 300 f ctl)
+
+	hrj		(tap-hold-next-release 300 j ctl)
+	hrk		(tap-hold-next-release 300 k sft)
+	hel		(tap-hold-next-release 300 l ralt :timeout-button RA-l)
+	hr{		(tap-hold-next-release 300 { met)
+	hr$		(tap-hold-next-release 300 $ lalt :timeout-button })
+	hr}		(tap-hold-next-release 300 } met)
 
 	1f1		(tap-hold	300	1	f1)
 	2f2		(tap-hold	300	2	f2)
@@ -69,8 +70,10 @@ _	_	_	_	_									_	_	_	_	_
 	-t2		(tap-hold-next-release	300	-	(layer-toggle turbo2))
 	:t2		(tap-hold-next-release	300	:	(layer-toggle turbo2))
 
-	_up		(tap-hold-next-release	300	\_	ralt)
-	,up		(tap-hold-next-release	300	,	ralt)
+	;;_up		(tap-hold-next-release	300	\_	ralt)
+	;;,up		(tap-hold-next-release	300	,	ralt)
+	_up		(tap-hold	150	\_	ralt)
+	,up		(tap-hold	150	,	ralt)
 
 	lay0		(layer-switch turbo0)
 
@@ -78,15 +81,25 @@ _	_	_	_	_									_	_	_	_	_
 	rgt		(tap-hold	300	rght	end)
 	up		(tap-hold	300	up	pgup)
 	dwn		(tap-hold	300	down	pgdn)
+
+	clsb		(tap-hold	300	@	])
+	clrb		(tap-hold	300	&	\))
+
+	rae		(tap-hold	300	e	RA-e)
+	rao		(tap-hold	300	o	RA-o)
+	raz		(tap-hold	300	z	RA-z)
+	rax		(tap-hold	300	x	RA-x)
+	rac		(tap-hold	300	c	RA-c)
+	ran		(tap-hold	300	n	RA-n)
 )
 
 (deflayer turbo0
 
 esc	@1f1	@2f2	@3f3	@4f4	@5f5	@*f11					@#f12	@6f6	@7f7	@8f8	@9f9	@0f10	bspc
-tab	q	w	e	r	t	@-t2					@:t2	y	u	i	o	p	del
+tab	q	w	@rae	r	t	@-t2					@:t2	y	u	i	@rao	p	del
 @hrdq	@hra	@hrs	@hrd	@hrf	g							h	@hrj	@hrk	@hel	@hr{	@hr$
-'	z	x	c	v	b	ret					kprt	n	m	\	|	[	@
-+	!	=	?	;									~	/	.	\(	&
+'	@raz	@rax	@rac	v	b	ret					kprt	@ran	m	\	|	[	@clsb
++	!	=	?	;									~	/	.	\(	@clrb
 							left	rght		left	rght
 								up		up
 						@spcl	@_up	down		down	@,up
