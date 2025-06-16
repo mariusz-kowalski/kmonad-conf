@@ -110,6 +110,8 @@ _	_	_	_	_									_	_	_	_	_
 	/%		(tap-hold	200	/	%)
 	.=		(tap-hold	200	.	=)
 	\(>		(tap-hold	200	\(	>)
+
+	cslk		(layer-switch	upcase)
 )
 
 (deflayer turbo0
@@ -128,7 +130,7 @@ tab	@qaa	@was	@rae	r	t	@-t2					@:t2	y	u	i	@rao	p	del
 
 _	_	_	_	_	_	_					_	_	_	_	_	_	_
 _	_	_	_	_	_	_					_	_	_	_	_	_	_
-_	_	_	_	_	_							_	_	_	_	_	}
+_	_	_	@cslk	_	_							_	_	@cslk	_	_	}
 _	_	_	_	_	_	_					_	_	_	_	_	_	_
 `	_	_	_	^									<	%	=	>	_
 							home	end		home	end
