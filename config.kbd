@@ -38,68 +38,87 @@ _	_	_	_	_									_	_	_	_	_
 (defalias
 	;;num	(layer-toggle numbers)	;; Bind num to a button that switches to a layer
 	;;kil	C-A-del				;; Bind kil to a button that Ctrl-Alt-deletes
-	;;ki2	(around-implicit ctl (around alt del))	;; the same as above
-	hrdq		(tap-hold-next-release 300 " lalt)
-	hra		(tap-hold-next-release 300 a met :timeout-button RA-a)
-	hrs		(tap-hold-next-release 300 s ralt :timeout-button RA-s)
-	hrd		(tap-hold-next-release 300 d sft)
-	hrf		(tap-hold-next-release 300 f ctl)
+ 	;;ki2	(around-implicit ctl (around alt del))	;; the same as above
+	hrdq		(tap-hold-next-release 210 " lalt)
+	hra		(tap-hold-next-release 210 a met)
+	hrs		(tap-hold-next-release 210 s ralt)
+	hrd		(tap-hold-next-release 210 d sft)
+	hrf		(tap-hold-next-release 210 f ctl)
 
-	hrj		(tap-hold-next-release 300 j ctl)
-	hrk		(tap-hold-next-release 300 k sft)
-	hel		(tap-hold-next-release 300 l ralt :timeout-button RA-l)
-	hr{		(tap-hold-next-release 300 { met)
-	hr$		(tap-hold-next-release 300 $ lalt :timeout-button })
-	hr}		(tap-hold-next-release 300 } met)
+	;;hrj		(tap-hold-next-release 210 j ctl)
+	hrj		(tap-hold-next-release 210 j ctl)
+	hrk		(tap-hold-next-release 210 k sft)
+	hel		(tap-hold-next-release 210 l ralt)
+	hr{		(tap-hold-next-release 210 { met)
+	hr$		(tap-hold-next-release 210 $ lalt)
+	hr}		(tap-hold-next-release 210 } met)
 
-	1f1		(tap-hold	300	1	f1)
-	2f2		(tap-hold	300	2	f2)
-	3f3		(tap-hold	300	3	f3)
-	4f4		(tap-hold	300	4	f4)
-	5f5		(tap-hold	300	5	f5)
-	6f6		(tap-hold	300	6	f6)
-	7f7		(tap-hold	300	7	f7)
-	8f8		(tap-hold	300	8	f8)
-	9f9		(tap-hold	300	9	f9)
-	0f10		(tap-hold	300	0	f10)
-	*f11		(tap-hold	300	*	f11)
-	#f12		(tap-hold	300	#	f12)
+	1f1		(tap-hold	210	1	f1)
+	2f2		(tap-hold	210	2	f2)
+	3f3		(tap-hold	210	3	f3)
+	4f4		(tap-hold	210	4	f4)
+	5f5		(tap-hold	210	5	f5)
+	6f6		(tap-hold	210	6	f6)
+	7f7		(tap-hold	210	7	f7)
+	8f8		(tap-hold	210	8	f8)
+	9f9		(tap-hold	210	9	f9)
+	0f10		(tap-hold	210	0	f10)
+	*f11		(tap-hold	210	*	f11)
+	#f12		(tap-hold	210	#	f12)
 
-	spcl		(tap-hold-next-release	300	spc	(layer-toggle turbo1))
+	spcl		(tap-hold-next-release	210	spc	(layer-toggle turbo1))
 
-	-t2		(tap-hold-next-release	300	-	(layer-toggle turbo2))
-	:t2		(tap-hold-next-release	300	:	(layer-toggle turbo2))
+	-t2		(tap-hold-next-release	210	-	(layer-toggle turbo2))
+	:t2		(tap-hold-next-release	210	:	(layer-toggle turbo2))
 
-	;;_up		(tap-hold-next-release	300	\_	ralt)
-	;;,up		(tap-hold-next-release	300	,	ralt)
+	;;_up		(tap-hold-next-release	210	\_	ralt)
+	;;,up		(tap-hold-next-release	210	,	ralt)
 	_up		(tap-hold	150	\_	ralt)
 	,up		(tap-hold	150	,	ralt)
 
 	lay0		(layer-switch turbo0)
 
-	lft		(tap-hold	300	left	home)
-	rgt		(tap-hold	300	rght	end)
-	up		(tap-hold	300	up	pgup)
-	dwn		(tap-hold	300	down	pgdn)
+	lft		(tap-hold	210	left	home)
+	rgt		(tap-hold	210	rght	end)
+	up		(tap-hold	210	up	pgup)
+	dwn		(tap-hold	210	down	pgdn)
 
-	clsb		(tap-hold	300	@	])
-	clrb		(tap-hold	300	&	\))
+	clsb		(tap-hold	210	@	])
+	clrb		(tap-hold	210	&	\))
 
-	rae		(tap-hold	300	e	RA-e)
-	rao		(tap-hold	300	o	RA-o)
-	raz		(tap-hold	300	z	RA-z)
-	rax		(tap-hold	300	x	RA-x)
-	rac		(tap-hold	300	c	RA-c)
-	ran		(tap-hold	300	n	RA-n)
+	rae		(tap-hold	200	e	RA-e)
+	rao		(tap-hold	200	o	RA-o)
+	raz		(tap-hold	200	z	RA-z)
+	rax		(tap-hold	200	x	RA-x)
+	rac		(tap-hold	200	c	RA-c)
+	ran		(tap-hold	200	n	RA-n)
+
+	qaa		(tap-hold	200	q	RA-a)
+	was		(tap-hold	200	w	RA-s)
+	|al		(tap-hold	200	|	RA-l)
+
+	;;rae		e
+	;;rao		o
+	;;raz		z
+	;;rax		x
+	;;rac		c
+	;;ran		n
+	+`		(tap-hold	200	+	`)
+	;^		(tap-hold	200	;	^)
+
+	~<		(tap-hold	200	~	<)
+	/%		(tap-hold	200	/	%)
+	.=		(tap-hold	200	.	=)
+	\(>		(tap-hold	200	\(	>)
 )
 
 (deflayer turbo0
 
 esc	@1f1	@2f2	@3f3	@4f4	@5f5	@*f11					@#f12	@6f6	@7f7	@8f8	@9f9	@0f10	bspc
-tab	q	w	@rae	r	t	@-t2					@:t2	y	u	i	@rao	p	del
+tab	@qaa	@was	@rae	r	t	@-t2					@:t2	y	u	i	@rao	p	del
 @hrdq	@hra	@hrs	@hrd	@hrf	g							h	@hrj	@hrk	@hel	@hr{	@hr$
-'	@raz	@rax	@rac	v	b	ret					kprt	@ran	m	\	|	[	@clsb
-+	!	=	?	;									~	/	.	\(	@clrb
+'	@raz	@rax	@rac	v	b	ret					kprt	@ran	m	\	@|al	[	@clsb
+@+`	!	=	?	@;^									@~<	@/%	@.=	@\(>	@clrb
 							left	rght		left	rght
 								up		up
 						@spcl	@_up	down		down	@,up
@@ -109,9 +128,9 @@ tab	q	w	@rae	r	t	@-t2					@:t2	y	u	i	@rao	p	del
 
 _	_	_	_	_	_	_					_	_	_	_	_	_	_
 _	_	_	_	_	_	_					_	_	_	_	_	_	_
-_	_	_	_	_	_							_	_	_	_	_	@hr}
-_	_	_	_	_	_	_					_	_	_	_	_	_	]
-`	_	_	_	^									<	%	=	>	\)
+_	_	_	_	_	_							_	_	_	_	_	}
+_	_	_	_	_	_	_					_	_	_	_	_	_	_
+`	_	_	_	^									<	%	=	>	_
 							home	end		home	end
 								pgup		pgup
 						_	_	pgdn		pgdn	_
