@@ -171,9 +171,35 @@ _	_	_	_	_									_	_	_	_	_
 )
 
 (defalias
-	tab0 (tap-macro-release		tab (layer-switch turbo0))
-	dq0   (tap-macro-release	" (layer-switch turbo0))
+        tab0    (tap-macro-release         tab      (layer-switch turbo0))
+        dq0     (tap-macro-release         "        (layer-switch turbo0))
+        *0      (tap-macro-release         *        (layer-switch turbo0))
+        #0      (tap-macro-release         #        (layer-switch turbo0))
+        bsp0    (tap-macro-release         bspc     (layer-switch turbo0))
+        :0      (tap-macro-release         :        (layer-switch turbo0))
+        del0    (tap-macro-release         del      (layer-switch turbo0))
+        {0      (tap-macro-release         {        (layer-switch turbo0))
+        $0      (tap-macro-release         $        (layer-switch turbo0))
+        '0      (tap-macro-release         '        (layer-switch turbo0))
+        ret0    (tap-macro-release         ret      (layer-switch turbo0))
+        \\0     (tap-macro-release         \      (layer-switch turbo0))
+        |0      (tap-macro-release         |        (layer-switch turbo0))
+        [0      (tap-macro-release         [        (layer-switch turbo0))
+        @0      (tap-macro-release         @        (layer-switch turbo0))
+        +0      (tap-macro-release         +        (layer-switch turbo0))
+        !0      (tap-macro-release         !        (layer-switch turbo0))
+        =to     (tap-macro-release         =        (layer-switch turbo0))
+        ?0      (tap-macro-release         ?        (layer-switch turbo0))
+        ;0      (tap-macro-release         ;        (layer-switch turbo0))
+        ~0      (tap-macro-release         ~        (layer-switch turbo0))
+        /0      (tap-macro-release         /        (layer-switch turbo0))
+        .0      (tap-macro-release         .        (layer-switch turbo0))
+        \(0     (tap-macro-release         (      (layer-switch turbo0))
+        &0      (tap-macro-release         &        (layer-switch turbo0))
+        sp0     (tap-macro-release         spc      (layer-switch turbo0))
+        ,0      (tap-macro-release         ,        (layer-switch turbo0))
 )
+
 
 (deflayer upword
 
