@@ -112,6 +112,7 @@ _	_	_	_	_									_	_	_	_	_
 	\(>		(tap-hold	200	\(	>)
 
 	cslk		(layer-switch	upcase)
+	upwd		(layer-switch	upword)
 )
 
 (deflayer turbo0
@@ -130,7 +131,7 @@ tab	@qaa	@was	@rae	r	t	@-t2					@:t2	y	u	i	@rao	p	del
 
 _	_	_	_	_	_	_					_	_	_	_	_	_	_
 _	_	_	_	_	_	_					_	_	_	_	_	_	_
-_	_	_	@cslk	_	_							_	_	@cslk	_	_	}
+_	_	_	@cslk	@upwd	_							_	@upwd	@cslk	_	_	}
 _	_	_	_	_	_	_					_	_	_	_	_	_	_
 `	_	_	_	^									<	%	=	>	_
 							home	end		home	end
@@ -171,8 +172,33 @@ _	_	_	_	_									_	_	_	_	_
 )
 
 (defalias
-	tab0 (tap-macro-release		tab (layer-switch turbo0))
-	dq0   (tap-macro-release	" (layer-switch turbo0))
+	tab0	(tap-macro-release	 tab	(layer-switch turbo0))
+	dq0	(tap-macro-release	 "	(layer-switch turbo0))
+	*0	(tap-macro-release	 *	(layer-switch turbo0))
+	#0	(tap-macro-release	 #	(layer-switch turbo0))
+	bsp0	(tap-macro-release	 bspc	(layer-switch turbo0))
+	:0	(tap-macro-release	 :	(layer-switch turbo0))
+	del0	(tap-macro-release	 del	(layer-switch turbo0))
+	{0	(tap-macro-release	 {	(layer-switch turbo0))
+	$0	(tap-macro-release	 $	(layer-switch turbo0))
+	'0	(tap-macro-release	 '	(layer-switch turbo0))
+	ret0	(tap-macro-release	 ret	(layer-switch turbo0))
+	\\0	(tap-macro-release	 \\	(layer-switch turbo0))
+	|0	(tap-macro-release	 |	(layer-switch turbo0))
+	[0	(tap-macro-release	 [	(layer-switch turbo0))
+	at0	(tap-macro-release	 @	(layer-switch turbo0))
+	+0	(tap-macro-release	 +	(layer-switch turbo0))
+	!0	(tap-macro-release	 !	(layer-switch turbo0))
+	=0	(tap-macro-release	 =	(layer-switch turbo0))
+	?0	(tap-macro-release	 ?	(layer-switch turbo0))
+	;0	(tap-macro-release	 ;	(layer-switch turbo0))
+	~0	(tap-macro-release	 ~	(layer-switch turbo0))
+	/0	(tap-macro-release	 /	(layer-switch turbo0))
+	.0	(tap-macro-release	 .	(layer-switch turbo0))
+	\(0	(tap-macro-release	 \(	(layer-switch turbo0))
+	&0	(tap-macro-release	 &	(layer-switch turbo0))
+	sp0	(tap-macro-release	 spc	(layer-switch turbo0))
+	,0	(tap-macro-release	 ,	(layer-switch turbo0))
 )
 
 (deflayer upword
@@ -180,8 +206,8 @@ _	_	_	_	_									_	_	_	_	_
 @lay0	_	_	_	_	_	@*0					@#0	_	_	_	_	_	@bsp0
 @tab0	Q	W	E	R	T	_					@:0	Y	U	I	O	P	@del0
 @dq0	A	S	D	F	G							H	J	K	L	@{0	@$0
-@'0	Z	X	C	V	B	@ret0					@ret0	N	M	@\\0	@|0	@[0	@@0
-@+0	@!0	@=to	@?0	@;0									@~0	@/0	@.0	@\(0	@&0
+@'0	Z	X	C	V	B	@ret0					@ret0	N	M	@\\0	@|0	@[0	@at0
+@+0	@!0	@=0	@?0	@;0									@~0	@/0	@.0	@\(0	@&0
 							_	_		_	_
 								_		_
 						@sp0	_	_		@,0	@sp0
