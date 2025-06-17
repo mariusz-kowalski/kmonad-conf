@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="white"/>
+  <!-- head -->
+  <ellipse cx="256" cy="215" rx="95" ry="95" fill="#ffe6e6" stroke="black" stroke-width="3"/>
+  <!-- eyes -->
+  <circle cx="235" cy="205" r="20" fill="white" stroke="black" stroke-width="2"/>
+  <circle cx="277" cy="197" r="20" fill="white" stroke="black" stroke-width="2"/>
+  <circle cx="240" cy="205" r="8" fill="black"/>
+  <circle cx="285" cy="195" r="8" fill="black"/>
+  <!-- mouth -->
+  <path d="M220 240 Q256 275 292 240" stroke="red" stroke-width="3" fill="none"/>
+  <!-- hair spikes -->
+  <g stroke="black" stroke-width="3">
+    <line x1="256" y1="120" x2="180" y2="50"/>
+    <line x1="256" y1="120" x2="210" y2="45"/>
+    <line x1="256" y1="120" x2="256" y2="40"/>
+    <line x1="256" y1="120" x2="302" y2="45"/>
+    <line x1="256" y1="120" x2="332" y2="60"/>
+  </g>
+  <!-- body -->
+  <rect x="206" y="310" width="100" height="130" fill="#c8c8ff" stroke="black" stroke-width="3"/>
+  <!-- arms raised -->
+  <line x1="206" y1="330" x2="150" y2="250" stroke="black" stroke-width="4"/>
+  <line x1="306" y1="330" x2="362" y2="250" stroke="black" stroke-width="4"/>
+  <!-- hands crazy -->
+  <g stroke="black" stroke-width="3">
+    <polyline points="150,250 160,240 170,250 180,240" fill="none"/>
+    <polyline points="362,250 352,240 342,250 332,240" fill="none"/>
+  </g>
+  <!-- ergodox keyboard halves -->
+  <g fill="#dddddd" stroke="black">
+    <rect x="120" y="460" width="60" height="20"/>
+    <rect x="125" y="480" width="60" height="20"/>
+    <rect x="130" y="500" width="60" height="20"/>
+    <rect x="332" y="460" width="60" height="20"/>
+    <rect x="327" y="480" width="60" height="20"/>
+    <rect x="322" y="500" width="60" height="20"/>
+  </g>
+  <!-- keyboard cable -->
+  <path d="M180 470 H332" stroke="black" stroke-width="2" fill="none" stroke-dasharray="5,3"/>
+  <!-- text -->
+  <text x="216" y="360" font-size="24" font-family="sans-serif">Code!</text>
+</svg>
