@@ -1,5 +1,7 @@
 # KMonad Configuration for ErgoDox EZ
 
+![](images/crazy-programmer.svg)
+
 This repository contains a configuration file for [KMonad](https://github.com/kmonad/kmonad) designed for the ErgoDox EZ keyboard.
 
 ## Requirements
