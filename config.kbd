@@ -110,6 +110,8 @@ _	_	_	_	_									_	_	_	_	_
 	/%		(tap-hold	200	/	%)
 	.=		(tap-hold	200	.	=)
 	\(>		(tap-hold	200	\(	>)
+	!e		(tap-hold	200	!	(tap-macro ! ret))
+	?e		(tap-hold	200	?	(tap-macro ? ret))
 
 	cslk		(layer-switch	upcase)
 	upwd		(layer-switch	upword)
@@ -121,7 +123,7 @@ esc	@1f1	@2f2	@3f3	@4f4	@5f5	@*f11					@#f12	@6f6	@7f7	@8f8	@9f9	@0f10	bspc
 tab	@qaa	@was	@rae	r	t	@-t2					@:t2	y	u	i	@rao	p	del
 @hrdq	@hra	@hrs	@hrd	@hrf	g							h	@hrj	@hrk	@hel	@hr{	@hr$
 '	@raz	@rax	@rac	v	b	ret					kprt	@ran	m	\	@|al	[	@clsb
-@+`	!	=	?	@;^									@~<	@/%	@.=	@\(>	@clrb
+@+`	@!e	=	@?e	@;^									@~<	@/%	@.=	@\(>	@clrb
 							left	rght		left	rght
 								up		up
 						@spcl	@_up	down		down	@,up
